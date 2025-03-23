@@ -5,20 +5,20 @@
 class Hibiscus < Formula
   desc "Modern terminal UI to interact with AWS resources"
   homepage "https://jaehong21.com"
-  version "0.2.0-rc.0"
+  version "0.2.0-rc.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.0/hibiscus_Darwin_amd64.tar.gz"
-      sha256 "28128a3cf5fdf434b5aa28d95ac0e4285040be15ee837dfaea0563baf5fb09c3"
+      url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.1/hibiscus_Darwin_amd64.tar.gz"
+      sha256 "35a8a84975039fac67e2578551cfa4bbf7c5d6c096c9a9daba10eed0b92f4f41"
 
       def install
         bin.install "hibiscus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.0/hibiscus_Darwin_arm64.tar.gz"
-      sha256 "eb9ed4395e2f9836c8c53f1d57c7bf053edcfc0e390277d1a76e09f5ac2d5c94"
+      url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.1/hibiscus_Darwin_arm64.tar.gz"
+      sha256 "bd7235009adc88dedb1e1bb358e24f6d53ec175acc841258c91c9ee504c618bf"
 
       def install
         bin.install "hibiscus"
@@ -29,8 +29,8 @@ class Hibiscus < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.0/hibiscus_Linux_amd64.tar.gz"
-        sha256 "27a14f2699dbc75e6d7a01949e930cc15a457835534b9abf07a2dbb9c2af6bb9"
+        url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.1/hibiscus_Linux_amd64.tar.gz"
+        sha256 "707e332bb2a9d0688b1c3b4e3fcd77eeb8b3441d39ca1a3ad70153ecc8b0dafb"
 
         def install
           bin.install "hibiscus"
@@ -39,8 +39,8 @@ class Hibiscus < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.0/hibiscus_Linux_arm64.tar.gz"
-        sha256 "ed410d5a840add2ae198e83f5c38b7d809976cdff5b92d9a51d4e5b0f788705b"
+        url "https://github.com/jaehong21/hibiscus/releases/download/v0.2.0-rc.1/hibiscus_Linux_arm64.tar.gz"
+        sha256 "eb5cc60d8a964294ee38e7e2dd9f53839a3fb13b70852c1f79cb0510784b6f5d"
 
         def install
           bin.install "hibiscus"
