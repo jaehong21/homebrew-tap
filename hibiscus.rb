@@ -5,20 +5,20 @@
 class Hibiscus < Formula
   desc "Modern terminal UI to interact with AWS resources"
   homepage "https://jaehong21.com"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.1/hibiscus_Darwin_amd64.tar.gz"
-      sha256 "52c7244604a4817fb5db6f221b08a176045d3bfd805c764dd185be0d7aedcee9"
+      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.2/hibiscus_Darwin_amd64.tar.gz"
+      sha256 "0d324f96ecf79d9a05a20d4d3199cf461898b48647f98972ada59f21bd6e7859"
 
       def install
         bin.install "hibiscus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.1/hibiscus_Darwin_arm64.tar.gz"
-      sha256 "400f2203988375b5daba68f0659bc900e0c4d11e6e89a3a29018e86a46e62000"
+      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.2/hibiscus_Darwin_arm64.tar.gz"
+      sha256 "5e3e69f2d450d77c3a2fc557f85f91bccb442cabc74a8edf2138ee7c446bc357"
 
       def install
         bin.install "hibiscus"
@@ -28,15 +28,15 @@ class Hibiscus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.1/hibiscus_Linux_amd64.tar.gz"
-      sha256 "07d7652617c2ad9fcf5e62c1d5fe60db085ae71c24c2c4e1525ab3a7d8063055"
+      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.2/hibiscus_Linux_amd64.tar.gz"
+      sha256 "e78404d7015749f7bf6c056b33907ca8cf3687ac847012bd15803118a162955c"
       def install
         bin.install "hibiscus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.1/hibiscus_Linux_arm64.tar.gz"
-      sha256 "61a074fd7e1596fe8c255a0e96588ee4b09cbd3553e1431f1b83a71eab26fda1"
+      url "https://github.com/jaehong21/hibiscus/releases/download/v0.3.2/hibiscus_Linux_arm64.tar.gz"
+      sha256 "c58375803efb652b6754c983e266c6e05d6ee91efe6990970880d4dde8f8f4c0"
       def install
         bin.install "hibiscus"
       end
