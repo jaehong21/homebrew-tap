@@ -22,7 +22,6 @@ cask "daylite" do
 
   zap trash: [
     "~/Library/Application Support/com.daylite.me",
-    "~/Library/Application Support/com.jaehong21.daylite",
     "~/Library/Caches/com.daylite.me.ShipIt",
     "~/Library/HTTPStorages/com.daylite.me",
     "~/Library/Preferences/com.daylite.me.plist",
