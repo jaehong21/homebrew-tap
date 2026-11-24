@@ -1,6 +1,6 @@
 cask "daylite" do
-  version "0.4.5"
-  sha256 "a9f131114760f476335c64e6943cb55bdedee81b049dcc1c57b8f8b22c2bec3f"
+  version "0.4.6"
+  sha256 "dd02e5f165cb03f573923adaf20d5f73dd2046402e858121aef47c67fa7b3102"
 
   url "https://daylite.me/download/Daylite-#{version}-darwin-arm64.dmg"
   name "Daylite"
